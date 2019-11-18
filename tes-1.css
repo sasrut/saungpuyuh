@@ -1,0 +1,137 @@
+.jumbotron {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.jumbotron__wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+.jumbotron__box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.jumbotron__inner {
+        max-width: 720px;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 10%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+.jumbotron__title {
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 50px;
+        top: 50%;
+        line-height: 1;
+        /* text-shadow: 3px 2px 12px rgba(0, 0, 0, 0.92); */
+        color: #6c2b00;
+
+    }
+
+
+
+
+.navbar{
+    top: -42px;
+}
+
+a.nav-link{
+    color: brown;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a.nav-link:hover{
+    color: blue;
+}
+
+
+/*
+.navbar-nav{
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+
+.nav-item{
+    padding-right: 3%;
+}
+
+.nav-link{
+    display: block;
+    padding: .5rem 1rem;
+} */
+
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .catalog-desc{
+    position: relative;
+    /* padding-top: 14px; */
+    width: 500px;
+  }
+
+  .about-desc{
+    display: block;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    text-align: center;
+    position: relative;
+    /* left: 30%; */
+    /* padding-top: 14px; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+  }
+
+  h1.about{
+      margin-bottom: 5%;
+  }

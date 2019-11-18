@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <!-- <link href="tes-1.scss" rel="stylesheet"/> -->
+    <!-- <link href="tes-1.css" type="text/css"/> -->
+    <link href="tes-1.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+
+    
+</head>
+    
+<body>
+
+    <section class="jumbotron" style="background-color: #fff;">
+        <div class="jumbotron__wrapper">
+            <nav class="navbar navbar-expand-sm bg-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Catalog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><h1>Swipe down for more</h1></div>
+                    <div class="swiper-slide">
+                        <img src="https://soulusi.s3.amazonaws.com/posts/23342/medium_20181006115138.png">
+                        <div class="catalog-desc">
+                            <h1>INI JUDUL</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus, perspiciatis magni illum blanditiis laboriosam reprehenderit ea magnam excepturi, aliquam sequi. Accusamus maiores expedita similique quasi culpa aliquid blanditiis facere.</p>
+                            <p>Rp. xx.xxx</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://bekasipedia.com/wp-content/uploads/2019/07/telor-puyuh.png">
+                            <div class="catalog-desc">
+                               <h1>INI JUDUL</h1>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, repellendus, perspiciatis magni illum blanditiis laboriosam reprehenderit ea magnam excepturi, aliquam sequi. Accusamus maiores expedita similique quasi culpa aliquid blanditiis facere.</p>
+                               <p>Rp. xx.xxx</p>
+                            </div>
+                    </div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">Slide 10</div>
+                 </div>
+                    <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+   
+    
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          direction: 'vertical',
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+      </script>
+
+</body>
+</html>

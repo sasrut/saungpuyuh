@@ -1,0 +1,77 @@
+.jumbotron {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    // &:after {
+    //     content: "";
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     height: 215px;
+    //     width: 100%;
+    //     // background: url(https://interaktif.kompas.id/wp-content/uploads/sites/316/2019/08/brush-btm.png) no-repeat center center;
+    //     background-size: cover;
+    //     z-index: 1;
+    // }
+    
+    &__wrapper {
+        width: 100%;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: rgba(243, 236, 225, 0.25);
+       }
+
+
+    &__box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__inner {
+        max-width: 720px;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 10%;
+        padding-right: 20px;
+        padding-left: 20px;
+        color: #6c2b00;
+
+        @include smartphone {
+            padding-top: 25%;
+          }
+    }
+
+    &__title {
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 90px;
+        line-height: 1;
+        text-shadow: 3px 2px 12px rgba(0, 0, 0, 0.92);
+        color: #ffffff;
+
+        @include smartphone {
+            font-size: 46px;
+          }
+    }
+
+    &__excerpt {
+        font-family: "PT Sans",sans-serif;
+        font-size: 20px;
+
+        @include smartphone {
+            font-size: 16px;
+          }
+    }
+}
