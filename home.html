@@ -9,13 +9,16 @@
     <link href="tes-1.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+
     
 </head>
     
 <body>
-    <section class="jumbotron" style="background-color: brown;">
+    <section class="jumbotron">
         <div class="jumbotron__wrapper">
-            <nav class="navbar navbar-expand-sm bg-light">
+            <nav class="navbar navbar-expand-sm">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
@@ -28,6 +31,27 @@
                     </li>
                 </ul>
             </nav>
+
+
+            <!-- KONTEN -->
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://soulusi.s3.amazonaws.com/posts/23342/medium_20181006115138.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://soulusi.s3.amazonaws.com/posts/23342/medium_20181006115138.png">
+                    </div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+
         
         </div>
     </section>
@@ -53,7 +77,15 @@
     </section>
 
 
-
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+</script>
 
 </body>
 </html>
